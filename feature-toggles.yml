@@ -6,5 +6,5 @@ features:
   recaptcha: 
         primary: true
 courier:
-  enable-lcb:
+  lcb:
     primary: false

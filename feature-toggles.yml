@@ -1,10 +1,98 @@
 features:
-  cognitoAllowSendEmail: 
+  featureEnabled:
+    primary: false
+    ios: false
+    android: true
+    web: false
+  featureDisabled:
     primary: true
-      inner:
-        primary: true
-  recaptcha: 
-        primary: true
+    ios: false
+    android: true
+    web: true
+  cognito.allow-send-email: 
+    primary: true
+
+#WIP about naming convension
+auth-sing-up: 
+  primary: false
+  ios: false
+  android: true
+  web: false
+  resend-temp-pass: #(common-sing-up.resend-temp-pass)
+    primary: false
+    ios: false
+    android: true
+    web: false
+auth-login: 
+  primary: false
+  ios: false
+  android: true
+  web: false
+  resend-pass: #(login.resend-pass)
+    primary: false
+    ios: false
+    android: true
+    web: false
+onboarding:
+  primary: true
+  ios: true
+  android: true
+  web: false 
+marketplace:
+  primary: true
+  ios: true
+  android: true
+  web: false
+  obnoarding-screen: #(marketplace.obnoarding-screen)
+    primary: true
+    ios: true
+    android: true
+    web: false
+  opportunities-list: #(marketplace.opportunities-list)
+    primary: true
+    ios: true
+    android: true
+    web: false
+  accepted-rounds-upcoming: #(marketplace.accepted-round-upcoming) <domain>.<scope-feature>
+    primary: true
+    ios: true
+    android: true
+    web: false
+    upcoming-new-back-end: #(marketplace.accepted-round-upcoming) <domain>.<scope-feature>.<alternative-implementation(feature)>
+      primary: false
+  accepted-rounds-historical: #(marketplace.accepted-round.historical)
+    primary: true
+    ios: true
+    android: true
+    web: false
+  holidays: #(marketplace.holidays-what?)
+    primary: true
+    ios: true
+    android: true
+    web: true
+forms:
+  primary: true
+  ios: false
+  android: false
+  web: true
+  duplicate-barcode:
+    primary: true
+    ios: false
+    android: false
+    web: true
+  change-bank-acccounts:
+    primary: true
+    ios: false
+    android: false
+    web: true
 courier:
   lcb:
     primary: false
+
+#web:
+  marketplace: false 
+  marketplace.holidays: true
+ #ios:  
+  marketplace: true 
+  marketplace.holidays: false
+  

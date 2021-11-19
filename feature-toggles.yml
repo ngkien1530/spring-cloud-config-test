@@ -1,0 +1,10 @@
+features:
+  cognitoAllowSendEmail: 
+    primary: true
+      inner:
+        primary: true
+  recaptcha: 
+        primary: true
+courier:
+  enable-lcb:
+    primary: true

@@ -16,3 +16,6 @@ features:
     lcb:
       primary: false
       web: false
+  rate-negotiation:
+    email:
+      primary: true
